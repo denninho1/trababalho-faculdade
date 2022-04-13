@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Photo Gallery
+      Votação
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,21 +9,71 @@
 <ion-content>
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Photo Gallery</ion-title>
+      <ion-title size="large">Área de votação</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <ion-grid>
-    <ion-row>
-    <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
-      <ion-img [src]="photo.webviewPath" (click)="showActionSheet(photo, position)"></ion-img>
-    </ion-col>
-    </ion-row>
-  </ion-grid>
+  <ion-card>
+    <ion-img src="https://2.bp.blogspot.com/-TNXMfDpo958/TfLfLCPpAII/AAAAAAAAAr0/JXvhdRuflZg/s1600/Urna_eletr%25C3%25B4nica.jpeg"></ion-img>
+    <ion-card-header>
+      <ion-card-title id="title_tab2" >Área de votação</ion-card-title>
+      <ion-card-subtitle id="subtitle_tab2" >
+        Informe seus dados e escolha seu presidente abaixo:
+      </ion-card-subtitle>
+    </ion-card-header>
 
-  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-    <ion-fab-button (click)="photoService.addNewToGallery()">
-      <ion-icon name="camera"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+    <ion-card-content>
+      <ion-item id="item" >
+        <ion-label id="label_tab2" style="font-size: 1.5rem;" position="stacked" >
+          Seu nome completo*
+        </ion-label>
+
+        <ion-input placeholder="Digite seu nome" id="input_tab2" >
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label id="label_tab2" style="font-size: 1.5rem;" position="stacked" >
+          Seu titulo de eleitor*
+        </ion-label>
+
+        <ion-input placeholder="Digite seu titulo" id="input_tab2" >
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label id="label_tab2" style="font-size: 1.5rem;" position="stacked" >
+          Seu CPF*
+        </ion-label>
+
+        <ion-input placeholder="Digite seu CPF (apenas npumeros)" maxlength="11" id="input_tab2" >
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label id="label_tab2" style="font-size: 1.5rem;" position="stacked" >
+          Nome do politico
+        </ion-label>
+
+        <ion-input placeholder="Digite o nome" maxlength="2" id="input_tab2" >
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label id="label_tab2" style="font-size: 1.5rem;" position="stacked" >
+          Número do politico*
+        </ion-label>
+
+        <ion-input placeholder="Digite o número" maxlength="2" id="input_tab2" >
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-button id="btn_tab2" color="success" class="btn_tab1" >VOTAR</ion-button>
+      </ion-item>
+    </ion-card-content>
+  
+  </ion-card>
+
+
 </ion-content>

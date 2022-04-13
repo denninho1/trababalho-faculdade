@@ -1,3 +1,42 @@
 ion-content ion-toolbar {
   --background: translucent;
 }
+
+#item1 {
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+#item1_info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+#item1_info ion-text {
+  color: #bebebe;
+  letter-spacing: 1px;
+}
+
+#title_tab1 {
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  border-bottom: .01rem solid #fff;
+}
+
+
+
+
+#title {
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+#info_tab1 {
+  display: block;
+  width: 100%;
+  line-height: 2;
+  color: rgb(209, 205, 205);
+}
